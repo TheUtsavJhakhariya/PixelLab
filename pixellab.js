@@ -17,7 +17,7 @@
             }
             reader.readAsDataURL(e.target.files[0]);     
         }
-
+ 
         var brightness = 0; // Initialize brightness
         var contrast = 1; // Initialize contrast
 
