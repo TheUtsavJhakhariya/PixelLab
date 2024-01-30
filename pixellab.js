@@ -19,7 +19,7 @@
         }
  
         var brightness = 0; 
-        var contrast = 1; // Initialize contrast
+        var contrast = 1; 
 
         // Adjust contrast and brightness
         function adjustImage() {
@@ -29,15 +29,14 @@
             var data = imageData.data;
 
             for (var i = 0; i < data.length; i += 4) {
-                data[i] = truncate(data[i] * contrast + brightness);     // red
-                data[i + 1] = truncate(data[i + 1] * contrast + brightness); // green
-                data[i + 2] = truncate(data[i + 2] * contrast + brightness); // blue
+                data[i] = truncate(data[i] * contrast + brightness);   
+                data[i + 1] = truncate(data[i + 1] * contrast + brightness); 
+                data[i + 2] = truncate(data[i + 2] * contrast + brightness);
             }
 
             ctx.putImageData(imageData, 0, 0);
         }
 
-        // Truncate color values to valid range
         function truncate(value) {
             return Math.min(255, Math.max(0, value));
         }
@@ -61,8 +60,6 @@
             contrast -= 0.1;
             adjustImage();
         });
-
-        // Save image functionality
         document.getElementById('saveImage').addEventListener('click', function() {
             var image = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
             var link = document.createElement('a');
