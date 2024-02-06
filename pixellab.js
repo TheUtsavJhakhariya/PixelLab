@@ -20,8 +20,6 @@
  
         var brightness = 0; 
         var contrast = 1; 
-
-        // Adjust contrast and brightness
         function adjustImage() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.drawImage(img, 0, 0);
