@@ -5,7 +5,7 @@
         var ctx = canvas.getContext('2d');
         var img = new Image();
    
-        function handleImage(e) {
+        function handleImage(e) { 
             var reader = new FileReader();  
             reader.onload = function(event) {
                 img.onload = function() { 
