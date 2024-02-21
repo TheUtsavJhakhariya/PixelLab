@@ -4,7 +4,7 @@
         var canvas = document.getElementById('imageCanvas');
         var ctx = canvas.getContext('2d');
         var img = new Image();
-   
+    
         function handleImage(e) { 
             var reader = new FileReader();   
             reader.onload = function(event) {
