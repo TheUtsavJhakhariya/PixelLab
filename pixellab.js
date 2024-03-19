@@ -13,7 +13,7 @@
                     canvas.height = img.height;
                     ctx.drawImage(img, 0, 0);
                 }
-                img.src = event.target.result;
+                img.src = event.target.result; 
             }
             reader.readAsDataURL(e.target.files[0]);     
         }
