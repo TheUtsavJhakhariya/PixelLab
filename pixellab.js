@@ -16,7 +16,7 @@
                 img.src = event.target.result; 
             } 
             reader.readAsDataURL(e.target.files[0]);     
-        }
+        } 
  
         var brightness = 0; 
         var contrast = 1; 
