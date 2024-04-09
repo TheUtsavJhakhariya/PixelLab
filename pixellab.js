@@ -7,7 +7,7 @@
     
         function handleImage(e) { 
             var reader = new FileReader();    
-            reader.onload = function(event) {
+            reader.onload = function(event) { 
                 img.onload = function() {    
                     canvas.width = img.width;
                     canvas.height = img.height;
