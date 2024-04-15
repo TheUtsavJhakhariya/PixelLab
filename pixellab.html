@@ -8,16 +8,37 @@
 
 </head>
 <body>
-    <input type="file" id="imageLoader" name="imageLoader"/><br><br>
-    <canvas id="imageCanvas"></canvas>
-    <div>  
-        <button id="increaseContrast">Increase Contrast</button>
-        <button id="decreaseContrast">Decrease Contrast</button>
-        <button id="increaseBrightness">Increase Brightness</button> 
-        <button id="decreaseBrightness">Decrease Brightness</button>
-        <button id="saveImage">Save Image</button>
-    </div>
+    <div id="cursor"></div>
+  <div class="image-upload">
+    <label for="imageLoader">
+      <i class="fas fa-upload"></i> Upload Image
+    </label>
+    <input type="file" id="imageLoader" name="imageLoader" />
+  </div>
 
+  <canvas id="imageCanvas" class="image-canvas"></canvas>
+
+  <div class="controls">
+    <button id="increaseContrast" class="control-button">
+      <i class="fas fa-adjust"></i> Increase Contrast
+    </button>
+    &nbsp;
+    <button id="decreaseContrast" class="control-button">
+      <i class="fas fa-adjust"></i> Decrease Contrast
+    </button>
+    &nbsp;
+    <button id="increaseBrightness" class="control-button">
+      <i class="fas fa-sun"></i> Increase Brightness
+    </button>
+    &nbsp;
+    <button id="decreaseBrightness" class="control-button">
+      <i class="fas fa-cloud-rain"></i> Decrease Brightness
+    </button>
+    &nbsp;
+    <button id="saveImage" class="control-button">
+      <i class="fas fa-save"></i> Save Image
+    </button>
+  </div>
     <script src="pixellab.js"></script>
 
 </body>
