@@ -1,4 +1,4 @@
-  var imageLoader = document.getElementById('imageLoader');
+ var imageLoader = document.getElementById('imageLoader');
         imageLoader.addEventListener('change', handleImage, false);
 
         var canvas = document.getElementById('imageCanvas');
@@ -65,3 +65,10 @@
             link.href = image;
             link.click();
         });
+
+
+        document.addEventListener('mousemove', function(e) {
+  var cursor = document.getElementById('cursor');
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
