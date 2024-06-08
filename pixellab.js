@@ -6,7 +6,7 @@
         var img = new Image(); 
     
         function handleImage(e) { 
-            var reader = new FileReader();   
+            var reader = new FileReader();    
             reader.onload = function(event) {
                 img.onload = function() {   
                     canvas.width = img.width;
