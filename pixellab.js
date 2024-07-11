@@ -9,7 +9,7 @@
             var reader = new FileReader();    
             reader.onload = function(event) {
                 img.onload = function() {   
-                    canvas.width = img.width;
+                    canvas.width = img.width;  
                     canvas.height = img.height; 
                     ctx.drawImage(img, 0, 0);
                 }
