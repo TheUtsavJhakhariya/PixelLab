@@ -59,7 +59,7 @@
             adjustImage();
         });
         document.getElementById('saveImage').addEventListener('click', function() {
-            var image = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+            var image = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream"); 
             var link = document.createElement('a');
             link.download = 'edited-image.jpg';
             link.href = image;
