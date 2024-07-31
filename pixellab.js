@@ -10,7 +10,7 @@
             reader.onload = function(event) { 
                 img.onload = function() {   
                     canvas.width = img.width;  
-                    canvas.height = img.height; 
+                    canvas.height = img.height;  
                     ctx.drawImage(img, 0, 0);
                 }
                 img.src = event.target.result; 
